@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'OverwatchFont';
+  src: url('big_noodle.ttf');
+}
+
+@font-face {
+  font-family: 'OverwatchFontOblique';
+  src: url('bignoodletoo_oblique.ttf');
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #272121, #363333);
+  padding: 5vh 10vw;
+}
+
+.player-info-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  //width: 80vw;
+}
+
+.player-icon-name {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-icon {
+  border: solid 1px #e16428;
+  border-radius: 5px;
+}
+
+.player-name {
+  color: #f6e9e9;
+  font-family: OverwatchFontOblique;
+  font-size: 30px;
+  letter-spacing: 0.6;
+}
+
+.time-played-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-title {
+  color: #f6e9e9;
+  margin-bottom: 0;
+}
+
+.time-data {
+  color: #f6e9e9;
+  font-family: OverwatchFontOblique;
+  margin-top: 10px;
+}
+
+.hero-info-container {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 0%;
+  margin-bottom: 20px;
+  max-width: 725px;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  margin: 0 20px 25px 0;
+  position: relative;
+}
+
+.hero-img {
+  background-image: linear-gradient(to bottom right, #363333, #272121);
+  border: solid 1px #e16428;
+  border-radius: 5px;
+  height: 100px;
+  opacity: 0.5;
+  width: 60px;
+}
+
+.hero-tag {
+  color: #e16428;
+  display: none;
+  font-family: OverwatchFontOblique;
+  font-size: 16px;
+  letter-spacing: 0.6;
+  position: absolute;
+  text-align: center;
+  top: 105px;
+  z-index: 100;
+}
+
+.hero:hover .hero-tag {
+  display: block;
+}
+
+.selected .hero-img, .hero-img:hover {
+  cursor: pointer;
+  outline: none;
+  border-color: #f6e9e9;
+  box-shadow: 0 0 10px #f6e9e9;
+  opacity: 1;
+}
+
+.selected .hero-img {
+  background-image: linear-gradient(to bottom right, #f6e9e9, #272121);
+}
+
+.chart-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  //width: 100%;
+}
+
+.chart-container {
+  background-image: linear-gradient(to bottom right, #363333, #272121);
+  border: solid 1px #e16428;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  fill: white;
+  height: 500px;
+  margin: 0 30px 30px 0;
+  padding: 0 15px;
+  width: 400px;
+}
+
+.chart-title {
+  color: #f6e9e9;
+  font-family: OverwatchFontOblique;
+  font-size: 23px;
+  letter-spacing: 0.6;
+  padding-left: 10px;
+}
+
+svg {
+  margin: 0 auto;
+}

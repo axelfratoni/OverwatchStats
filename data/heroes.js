@@ -1,4 +1,4 @@
-var heroes = [{
+var heroList = [{
     id: "ana",
     name: "Ana",
     img: 'img/ana.png'

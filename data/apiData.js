@@ -1,4 +1,4 @@
-var data = {
+var apiData = {
   "competitiveStats": {
     "awards": {
       "cards": 37,
